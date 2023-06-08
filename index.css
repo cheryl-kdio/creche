@@ -17,6 +17,13 @@ h4::after {
   margin-bottom: 2px;
 }
 
+h1 {
+  text-align: center;
+  font-size: 400%;
+  opacity: 1;
+  color: rgb(137, 36, 92);
+}
+
 a {
   font-weight: bolder;
   color: rgb(137, 36, 92);
@@ -80,7 +87,8 @@ a {
     flex-direction: column;
   }
 
-  .Box2 {
+  .Box2,
+  .toc {
     display: none;
   }
 
@@ -99,10 +107,13 @@ a {
   .Entete {
     margin-left: 5%;
   }
+
+
 }
 
-/**/
+/* Corps du site */
 
+/*Flyer*/
 .flyer {
   display: block;
   color: inherit;
@@ -114,10 +125,11 @@ a {
 }
 
 .flyer:hover {
-  background-color: rgb(232, 81, 164);
+  background-color: rgb(137, 36, 92);
+  color: white;
 }
 
-
+/*Pages */
 .ContentOfPage {
   margin-top: 1rem;
   z-index: 1;
@@ -132,13 +144,6 @@ a {
 }
 
 
-
-h1 {
-  text-align: center;
-  font-size: 400%;
-  opacity: 1;
-  color: rgb(137, 36, 92);
-}
 
 .information {
   margin-left: 5%;
@@ -187,6 +192,11 @@ h1 {
   margin-left: 10%;
 }
 
+.trois {
+  float: left;
+  margin-right: 10%;
+}
+
 .quatre {
   margin-top: 5%;
 }
@@ -211,6 +221,7 @@ h1 {
   left: 0px;
 }
 
+/*Cartes */
 .container {
   position: relative;
   width: 60%;
@@ -343,11 +354,6 @@ h1 {
 }
 
 .activite:first-child {
-  margin-top: 6%;
-
-}
-
-.activite:not(:first-child) {
   margin-top: 1%;
 }
 
@@ -401,11 +407,6 @@ h1 {
   border: 1px solid;
   border-radius: 10px;
   animation: 5s;
-}
-
-.trois {
-  float: left;
-  margin-right: 10%;
 }
 
 
@@ -756,4 +757,41 @@ div.desc {
     max-width: 100%;
     transform: rotate(0deg);
   }
+}
+
+/*side bare toc*/
+
+.toc {
+  position: fixed;
+  left: 3em;
+  top: 10em;
+  padding: 1em;
+  width: 20em;
+  line-height: 2;
+  font-size: 11px;
+  border: 1px solid #aaa;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgb(137, 36, 92)
+}
+
+.toc ul ul {
+  padding-left: 2em;
+  list-style: square;
+}
+
+.toc li a {
+  display: inline-block;
+  color: rgb(137, 36, 92);
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: #111;
+  transform: translate(5px);
+  font-weight: bold;
 }
