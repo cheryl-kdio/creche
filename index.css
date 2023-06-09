@@ -24,6 +24,16 @@ h1 {
   color: rgb(137, 36, 92);
 }
 
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+  text-decoration: underline;
+
+}
+
 a {
   font-weight: bolder;
   color: rgb(137, 36, 92);
@@ -133,8 +143,11 @@ a {
 .ContentOfPage {
   margin-top: 1rem;
   z-index: 1;
-  text-align: center;
 
+}
+
+section {
+  margin-left: 10em;
 }
 
 .Entete {
@@ -162,7 +175,6 @@ a {
 .imgInfo {
   width: 300px;
   height: 300px;
-  border: none;
   -moz-border-radius: 120px;
   -webkit-border-radius: 120px;
   border-radius: 120px;
@@ -327,14 +339,11 @@ a {
 }
 
 
-
-
 .Field3 {
   margin-top: 10%;
   margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
   height: 300px;
   position: relative;
 
@@ -358,7 +367,6 @@ a {
 }
 
 .activite {
-  margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -370,46 +378,37 @@ a {
   position: relative;
   width: 50%;
   height: auto;
-  border: 1px solid;
-  border-radius: 10px;
-}
-
-.A2::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  border-radius: 50% 50% 0 0;
-  z-index: -2;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-
-.A2:hover::before {
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  background-color: rgb(137, 36, 92, 0.8);
-
-}
-
-.A2:hover {
-  color: white;
-
-
 }
 
 .A2 {
   position: relative;
   width: 50%;
   height: auto;
-  border: 1px solid;
-  border-radius: 10px;
-  animation: 5s;
 }
 
+/*table*/
 
+.tg td {
+  border: 1px solid rgb(137, 36, 92);
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+}
+
+.tg th {
+  border: 1px solid rgb(137, 36, 92);
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 10px 5px;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top
+}
+
+/****/
 .d1 {
   width: 90%;
   height: 100%;
@@ -766,7 +765,7 @@ div.desc {
   left: 3em;
   top: 10em;
   padding: 1em;
-  width: 20em;
+  width: 15%;
   line-height: 2;
   font-size: 11px;
   border: 1px solid #aaa;
