@@ -1,11 +1,19 @@
 /*Généralités*/
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(90deg, #fff9c4,#aed6f1,#fff9c4);/* Chrome 10-25, Safari 5.1-6 */                          
+  background: linear-gradient(90deg, #fff9c4,#aed6f1,#fff9c4);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
 body {
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(137, 36, 92);
-
 }
 
 h4::after {
@@ -45,25 +53,31 @@ a {
   margin-left: 1%;
 }
 
+.navigationContainer {
+  height: 10px;
+  width: 100%;
+}
+
 .navigation {
+  top: 0%;
+  position: fixed;
+  min-width: 100%;
   display: flex;
-  background-color: rgb(137, 36, 92);
-  border-radius: 20px;
-  padding: 10px;
+  background-color: rgb(198, 58, 135, 0.8);
   z-index: 3;
-  box-shadow: #777;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);  
+  margin-left: 0%;
 }
 
 .Box2 {
   list-style-type: none;
   display: flex;
   overflow: hidden;
-  background-color: rgb(137, 36, 92);
 }
 
 .Box2LI {
-  padding-left: 10px;
+  width: 200px;
 }
 
 .Box2LI a {
@@ -142,6 +156,8 @@ a {
 /*Pages */
 .ContentOfPage {
   margin-top: 1rem;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 
 }
@@ -151,9 +167,8 @@ section {
 }
 
 .Entete {
-  margin-left: 0px;
   height: 550px;
-  background-color: white;
+  max-width: 100%;
 }
 
 
@@ -410,7 +425,7 @@ section {
 
 /****/
 .d1 {
-  width: 90%;
+  width: 100%;
   height: 100%;
   animation: fondu 30s infinite;
 }
@@ -425,6 +440,7 @@ section {
     position: absolute;
     background-size: cover;
     height: 550px;
+    max-width: 100%;
     text-align: center;
   }
 
@@ -436,6 +452,7 @@ section {
     position: absolute;
     background-size: cover;
     height: 550px;
+    max-width: 100%;
     text-align: center;
   }
 
@@ -447,6 +464,7 @@ section {
     position: absolute;
     background-size: cover;
     height: 550px;
+    max-width: 100%;
     text-align: center;
   }
 
@@ -458,6 +476,7 @@ section {
     position: absolute;
     background-size: cover;
     height: 550px;
+    max-width: 100%;
     text-align: center;
 
   }
@@ -470,6 +489,7 @@ section {
     position: absolute;
     background-size: cover;
     height: 550px;
+    max-width: 100%;
     text-align: center;
   }
 }
