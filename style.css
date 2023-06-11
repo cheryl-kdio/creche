@@ -212,10 +212,6 @@ section {
   color: rgb(137, 36, 92);
 }
 
-.Info{
-  margin-left: 5%;
-}
-
 .deux {
   margin-left: 10%;
 }
@@ -814,4 +810,13 @@ div.desc {
   color: #111;
   transform: translate(5px);
   font-weight: bold;
+}
+
+.Carrousel img {
+  margin-top: 5%;
+  max-width: 50%;
+  height: auto;
+  z-index: 1;
+  margin-right: auto;
+  margin-left: auto;
 }
