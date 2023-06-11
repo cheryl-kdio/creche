@@ -13,7 +13,7 @@ function fadeIn(element) {
   element.style.opacity = 0;
   let opacity = 0;
 
-  let fadeInterval = setInterval(function() {
+  let fadeInterval = setInterval(function () {
     opacity += 0.05;
     element.style.opacity = opacity;
 
@@ -26,7 +26,7 @@ function fadeIn(element) {
 function fadeOut(element) {
   let opacity = 1;
 
-  let fadeInterval = setInterval(function() {
+  let fadeInterval = setInterval(function () {
     opacity -= 0.05;
     element.style.opacity = opacity;
 
@@ -45,7 +45,7 @@ function changeImage() {
 
   fadeOut(carouselImage);
 
-  setTimeout(function() {
+  setTimeout(function () {
     if (ImageID == 0) {
       carouselImage.src = "Image/Loc1.jpg";
     } else if (ImageID == 1) {
