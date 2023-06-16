@@ -42,7 +42,6 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </span>
-    </div>
 
     <!--Footer-->
     <div class="footer">
@@ -58,29 +57,30 @@
             <span><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:Kebemarcelline7@gmail.com">Kebemarcelline7@gmail.com</a></span>
           </div>
 
-          <!-- Formulaire de contact -->
-          <form action="index.php" method="post">
-            <div class="contact-form">
-              <div class="form-box">
-                <div class="input-group">
-                  <label for="nom">Nom</label>
-                  <input type="text" name="nom" class="form-control" required>
-                </div>
-                <div class="input-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" class="form-control email" required>
-                </div>
-                <div class="textarea-wrapper">
-                  <label for="message">Message</label>
+            <!-- Formulaire de contact -->
+            <form action="Send.php" method="post">
+              <div class="contact-form">
+                <div class="form-box">
                   <div class="input-group">
-                    <textarea name="message" class="form-control" cols="30" rows="10" required></textarea>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" class="form-control" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control email" required>
+                  </div>
+                  <div class="textarea-wrapper">
+                    <label for="message">Message</label>
+                    <div class="input-group">
+                      <textarea name="message" class="form-control" cols="30" rows="10" required></textarea>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <button type="submit" name="envoyer" class="btn">Envoyer</button>
                   </div>
                 </div>
-                <div class="input-group">
-                  <button type="submit" name="envoyer" class="btn">Envoyer</button>
-                </div>
               </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
