@@ -6,62 +6,16 @@ function classToggle() {
 
 document.querySelector('.navbar__link-toggle').addEventListener('click', classToggle);
 
-
-let ImageID = 0;
-
-function fadeIn(element) {
-  element.style.opacity = 0;
-  let opacity = 0;
-
-  let fadeInterval = setInterval(function () {
-    opacity += 0.05;
-    element.style.opacity = opacity;
-
-    if (opacity >= 1) {
-      clearInterval(fadeInterval);
-    }
-  }, 50);
+// This function is for the slide show to display a text when the mouse is hover on the image
+function TextHover(){
+  let img1 = document.getElementById("slide_img1");
+  let img2 = document.getElementById("slide_img2");
+  let img3 = document.getElementById("slide_img3");
+  let img4 = document.getElementById("slide_img4");
+  let img5 = document.getElementById("slide_img5");
+  let img6 = document.getElementById("slide_img6");
+  let img7 = document.getElementById("slide_img7");
+  let img8 = document.getElementById("slide_img8");
+  let img9 = document.getElementById("slide_img9");
+  let img10 = document.getElementById("slide_img10");
 }
-
-function fadeOut(element) {
-  let opacity = 1;
-
-  let fadeInterval = setInterval(function () {
-    opacity -= 0.05;
-    element.style.opacity = opacity;
-
-    if (opacity <= 0) {
-      clearInterval(fadeInterval);
-    }
-  }, 50);
-}
-
-function changeImage() {
-  ImageID++;
-  if (ImageID > 5) {
-    ImageID = 0;
-  }
-  let carouselImage = document.querySelector('.CarrouselImage');
-
-  fadeOut(carouselImage);
-
-  setTimeout(function () {
-    if (ImageID == 0) {
-      carouselImage.src = "Image/Loc1.jpg";
-    } else if (ImageID == 1) {
-      carouselImage.src = "Image/Loc2.jpg";
-    } else if (ImageID == 2) {
-      carouselImage.src = "Image/Loc3.jpg";
-    } else if (ImageID == 3) {
-      carouselImage.src = "Image/Loc4.jpg";
-    } else if (ImageID == 4) {
-      carouselImage.src = "Image/Loc5.jpg";
-    }
-
-    fadeIn(carouselImage);
-  }, 500);
-}
-
-
-
-window.setInterval(changeImage, 3000);

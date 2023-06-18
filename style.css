@@ -132,6 +132,8 @@ a {
 
   .Entete {
     margin-left: 5%;
+    width: 100%;
+    height: 550px;
   }
 
 
@@ -435,9 +437,9 @@ section {
   0% {
     background-image: url(Image/background2.jpg);
     z-index: 0;
+    position: absolute;
     background-repeat: no-repeat;
     opacity: 0.5;
-    position: absolute;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -447,9 +449,9 @@ section {
   20% {
     background-image: url(Image/background3.jpg);
     z-index: 0;
+    position: absolute;
     background-repeat: no-repeat;
     opacity: 0.5;
-    position: absolute;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -459,9 +461,9 @@ section {
   40% {
     background-image: url(Image/background4.jpg);
     z-index: 0;
+    position: absolute;
     background-repeat: no-repeat;
     opacity: 0.5;
-    position: absolute;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -471,9 +473,9 @@ section {
   60% {
     background-image: url(Image/background5.jpg);
     z-index: 0;
+    position: absolute;
     background-repeat: no-repeat;
     opacity: 0.5;
-    position: absolute;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -484,9 +486,9 @@ section {
   100% {
     background-image: url(Image/background2.jpg);
     z-index: 0;
+    position: absolute;
     background-repeat: no-repeat;
     opacity: 0.5;
-    position: absolute;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -496,6 +498,7 @@ section {
 
 .Galerie {
   z-index: -1;
+  max-width: 100%;
 }
 
 div.gallery {
@@ -790,15 +793,6 @@ div.desc {
   font-weight: bold;
 }
 
-.Carrousel img {
-  margin-top: 5%;
-  max-width: 50%;
-  height: auto;
-  z-index: 1;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 
 /* Carrousel */
 input[type="radio"] {
@@ -895,6 +889,29 @@ label {
   transform: translatex(-300%)
 }
 
+#slide_img5:checked~.cadre-ratio ul>li {
+  transform: translatex(-400%)
+}
+
+#slide_img6:checked~.cadre-ratio ul>li {
+  transform: translatex(-500%)
+}
+
+#slide_img7:checked~.cadre-ratio ul>li {
+  transform: translatex(-600%)
+}
+
+#slide_img8:checked~.cadre-ratio ul>li {
+  transform: translatex(-700%)
+}
+
+#slide_img9:checked~.cadre-ratio ul>li {
+  transform: translatex(-800%)
+}
+
+#slide_img10:checked~.cadre-ratio ul>li {
+  transform: translatex(-900%)
+}
 
 
 /******************fleches**************************/
@@ -909,6 +926,7 @@ label {
 }
 
 
+/* carrousel avec fleches */
 
 .slideshow>.precedent>label,
 .slideshow>.suivant>label {
@@ -940,14 +958,26 @@ label {
 }
 
 
-#slide_img1:checked~.precedent>label.img4,
+#slide_img1:checked~.precedent>label.img10,
 #slide_img1:checked~.suivant>label.img2,
 #slide_img2:checked~.precedent>label.img1,
 #slide_img2:checked~.suivant>label.img3,
 #slide_img3:checked~.precedent>label.img2,
 #slide_img3:checked~.suivant>label.img4,
 #slide_img4:checked~.precedent>label.img3,
-#slide_img4:checked~.suivant>label.img1 {
+#slide_img4:checked~.suivant>label.img5,
+#slide_img5:checked~.precedent>label.img4,
+#slide_img5:checked~.suivant>label.img6,
+#slide_img6:checked~.precedent>label.img5,
+#slide_img6:checked~.suivant>label.img7,
+#slide_img7:checked~.precedent>label.img6,
+#slide_img7:checked~.suivant>label.img8,
+#slide_img8:checked~.precedent>label.img7,
+#slide_img8:checked~.suivant>label.img9,
+#slide_img9:checked~.precedent>label.img8,
+#slide_img9:checked~.suivant>label.img10,
+#slide_img10:checked~.precedent>label.img9,
+#slide_img10:checked~.suivant>label.img1 {
 
   display: flex;
   --size: clamp(2rem, 8vw, 4rem);
@@ -983,7 +1013,13 @@ label {
 #slide_img1:checked~.puces>label.img1>.actif_puces,
 #slide_img2:checked~.puces>label.img2>.actif_puces,
 #slide_img3:checked~.puces>label.img3>.actif_puces,
-#slide_img4:checked~.puces>label.img4>.actif_puces {
+#slide_img4:checked~.puces>label.img4>.actif_puces,
+#slide_img5:checked~.puces>label.img5>.actif_puces,
+#slide_img6:checked~.puces>label.img6>.actif_puces,
+#slide_img7:checked~.puces>label.img7>.actif_puces,
+#slide_img8:checked~.puces>label.img8>.actif_puces,
+#slide_img9:checked~.puces>label.img9>.actif_puces,
+#slide_img10:checked~.puces>label.img10>.actif_puces {
 
   border-radius: inherit;
   display: flex;
@@ -1048,6 +1084,15 @@ label {
       border: 2px solid rgb(137, 36, 92);
     }
   }
+}
+
+.contact-form{
+  border-radius: 10px;
+  margin-top: 10px;
+  width: fit-content;
+  height: fit-content;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-form:hover {
