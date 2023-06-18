@@ -217,9 +217,6 @@ section {
   color: rgb(137, 36, 92);
 }
 
-.deux {
-  margin-left: 10%;
-}
 
 .trois {
   float: left;
@@ -1086,7 +1083,7 @@ label {
   }
 }
 
-.contact-form{
+.contact-form {
   border-radius: 10px;
   margin-top: 10px;
   width: fit-content;
