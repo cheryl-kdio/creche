@@ -757,20 +757,22 @@ div.desc {
 
 .toc {
   position: fixed;
-  left: 3em;
-  top: 10em;
+  top: 50px;
   padding: 1em;
   width: 15%;
   line-height: 2;
   font-size: 11px;
   border: 1px solid #aaa;
+  background-color: rgb(198, 58, 135, 0.8);
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .toc ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  color: rgb(137, 36, 92)
+  color: white;
 }
 
 .toc ul ul {
@@ -780,7 +782,7 @@ div.desc {
 
 .toc li a {
   display: inline-block;
-  color: rgb(137, 36, 92);
+  color: white;
   text-decoration: none;
 }
 
@@ -1106,4 +1108,18 @@ label {
   &:hover {
     transform: scale(1.15);
   }
+}
+
+/* Header of the "A la une" news */
+.Ent_ALU{
+  margin-top: 45px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  height: 550px;
+  /*max-width: 500px;*/
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

@@ -6,7 +6,7 @@ function classToggle() {
 
 document.querySelector('.navbar__link-toggle').addEventListener('click', classToggle);
 
-// This function is for the slide show to display a text when the mouse is hover on the image
+// This function is for the slide show to display a text when the mouse is hover the image
 function TextHover(){
   let img1 = document.getElementById("slide_img1");
   let img2 = document.getElementById("slide_img2");
