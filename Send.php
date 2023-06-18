@@ -6,6 +6,7 @@ if(isset($_POST['envoyer'])) {
 
   // Destinataire de l'e-mail
   $destinataire = 'ibkebe13@gmail.com';
+  $destinataire2 = 'Kebemarcelline7@gmail.com';
 
   // Sujet de l'e-mail
   $sujet = 'Nouveau message de formulaire de contact';
@@ -20,10 +21,10 @@ if(isset($_POST['envoyer'])) {
   $headers .= "Reply-To: $email\r\n";
 
   // Envoyer l'e-mail
-  if(mail($destinataire, $sujet, $contenu, $headers)) {
-    echo "Message envoyé avec succès";
+  if(mail($destinataire, $sujet, $contenu, $headers) && mail($destinataire2, $sujet, $contenu, $headers)) {
+    echo "<script type='text/javascript'>alert('Votre message a été envoyé avec succès');</script>" ;
   } else {
-    echo "Une erreur s'est produite lors de l'envoi du message";
+    echo "<script type='text/javascript'>Une erreur s'est produite lors de l'envoi du message;</script>";
   }
 }
 ?>
