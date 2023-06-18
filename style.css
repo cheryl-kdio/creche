@@ -1121,11 +1121,18 @@ label {
   height: 550px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
-.Ent_ALU::before{
-  background: -webkit-linear-gradient(90deg, #fff9c4, #b2e8d7, #fff9c4);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(90deg, #fff9c4, #b2e8d7, #fff9c4);
-  backdrop-filter: blur(65%);
+.Ent_ALU::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background-color: rgb(255, 255, 255,0.3);
+  z-index: -1;
 }
+
