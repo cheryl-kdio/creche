@@ -1114,7 +1114,8 @@ label {
 /* Header of the "A la une" news */
 .Ent_ALU {
   margin-top: 45px;
-  align-items: center;
+  display: flex;
+  flex-direction: wrap;
   margin-right: auto;
   margin-left: auto;
   width: 90%;
@@ -1123,6 +1124,8 @@ label {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  padding: 20px;
+
 }
 
 .Ent_ALU::before {
@@ -1136,3 +1139,27 @@ label {
   z-index: -1;
 }
 
+.Ent_ALU img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms;
+}
+
+.Ent_ALU img:hover {
+  transform: scale(1.1);
+}
+
+.ALU_Img{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ALU_Text{
+  height: 100%;
+  margin-left: 2%;
+  width: 50%;
+}
