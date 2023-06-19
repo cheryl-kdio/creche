@@ -1184,6 +1184,7 @@ label {
   width: 50%;
 }
 
+<<<<<<< HEAD
 /*Activities images*/
 .Bubbleimg {
   border-radius: 30%;
@@ -1192,4 +1193,61 @@ label {
   margin: auto;
   display: block;
   margin-top: 10%;
+=======
+.GridAS {
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill,minmax(500px,1fr));
+  grid-gap: 10%;
+}
+
+.AS {
+  flex: 1;
+  background-color: #2e3033;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  width: 100%;
+}
+
+.AS::before {
+  content: "";
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background-color: rgb(255, 255, 255,0.3);
+  z-index: -1;
+}
+
+.AS_Img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.AS_Img {
+  height: 30%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.AS1{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.AS2{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.AS3{
+  grid-column: 3;
+  grid-row: 1;
+>>>>>>> 9d9df909173fadc59943f66ea1753aa605f54541
 }
