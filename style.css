@@ -3,10 +3,10 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
-  background: -webkit-linear-gradient(90deg, #fff9c4, #b2e8d7, #fff9c4);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(90deg, #fff9c4, #b2e8d7, #fff9c4);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(90deg, rgba(63, 94, 251, 0.2) 0%, rgba(78, 92, 239, 0.3) 6%, rgba(215, 75, 135, 0.4) 80%, rgba(252, 70, 107, 0.3) 100%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, rgba(63, 94, 251, 0.2) 0%, rgba(78, 92, 239, 0.3) 6%, rgba(215, 75, 135, 0.4) 80%, rgba(252, 70, 107, 0.3) 100%);
 }
 
 body {
@@ -86,7 +86,7 @@ a {
   position: fixed;
   min-width: 100%;
   display: flex;
-  background-color: rgb(198, 58, 135, 0.8);
+  background-color: rgb(198, 58, 135);
   z-index: 3;
   overflow: hidden;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -194,8 +194,15 @@ section {
 .Entete {
   height: 550px;
   max-width: 100%;
+  background-color: white;
 }
 
+.Entete>h1 {
+  z-index: 1;
+  position: relative;
+  top: 30%;
+  text-shadow: 5px 5px 2px rgba(255, 254, 254, 0.521);
+}
 
 
 .information {
@@ -473,9 +480,9 @@ section {
   0% {
     background-image: url(Image/background2.jpg);
     z-index: 0;
+    opacity: 0.7;
     position: absolute;
     background-repeat: no-repeat;
-    opacity: 0.5;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -485,9 +492,9 @@ section {
   20% {
     background-image: url(Image/background3.jpg);
     z-index: 0;
+    opacity: 0.7;
     position: absolute;
     background-repeat: no-repeat;
-    opacity: 0.5;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -495,11 +502,11 @@ section {
   }
 
   40% {
-    background-image: url(Image/background4.jpg);
+    background-image: url(Image/background4.jpeg);
     z-index: 0;
+    opacity: 0.7;
     position: absolute;
     background-repeat: no-repeat;
-    opacity: 0.5;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -507,11 +514,11 @@ section {
   }
 
   60% {
-    background-image: url(Image/background5.jpg);
+    background-image: url(Image/background5.png);
     z-index: 0;
+    opacity: 0.7;
     position: absolute;
     background-repeat: no-repeat;
-    opacity: 0.5;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -519,12 +526,37 @@ section {
 
   }
 
+  80% {
+    background-image: url(Image/background6.jpeg);
+    z-index: 0;
+    opacity: 0.7;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    max-width: 100%;
+    text-align: center;
+
+  }
+
+  90% {
+    background-image: url(Image/background.jpg);
+    z-index: 0;
+    opacity: 0.7;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    max-width: 100%;
+    text-align: center;
+  }
+
   100% {
     background-image: url(Image/background2.jpg);
     z-index: 0;
+    opacity: 0.7;
     position: absolute;
     background-repeat: no-repeat;
-    opacity: 0.5;
     background-size: cover;
     height: 550px;
     max-width: 100%;
@@ -807,24 +839,15 @@ div.desc {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-.toc ul {
-  list-style: none;
+.toc ol {
   padding: 0;
   margin: 0;
-  color: white;
 }
 
-.toc ul ul {
+.toc ol ol {
   padding-left: 2em;
-  list-style: "\002794";
 }
 
-.toc li a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  border-bottom: 2px solid white;
-}
 
 .toc a:hover {
   color: wheat;
@@ -1059,7 +1082,6 @@ label {
   height: inherit;
   width: inherit;
   background-color: black;
-
 }
 
 /* form design */
